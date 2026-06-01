@@ -31,7 +31,7 @@ const skills = [
 const experience = [
   {
     title: "Software Engineer",
-    place: "MindX Technology and AI School",
+    place: "MindX Tech & AI School",
     time: "Apr. 2026 – Present",
     location: "Hanoi, Vietnam",
     points: [
