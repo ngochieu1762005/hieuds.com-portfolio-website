@@ -293,8 +293,11 @@
 
     const projectWrap = $('#project-list');
     projects.forEach(item => {
+      const titleHtml = item.link 
+        ? `<a href="${item.link}" target="_blank" class="project-title-link">${item.name} <span class="link-arrow">↗</span></a>`
+        : item.name;
       projectWrap.appendChild(node('article', 'panel card-panel', `
-        <h3>${item.name}</h3>
+        <h3>${titleHtml}</h3>
         <p class="muted">${item.time}</p>
         <p>${item.description}</p>
         <div class="chip-row">${item.tags.map(t => `<span class="chip">${t}</span>`).join('')}</div>

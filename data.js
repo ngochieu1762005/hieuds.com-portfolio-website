@@ -71,21 +71,24 @@ const projects = [
     time: "Nov. 2025 – Feb. 2026",
     tags: ["RAG", "LangChain", "ChromaDB", "OCR"],
     description:
-      "Built a local academic assistant for USTH students by converting university PDFs into retrievable chunks for document-grounded question answering."
+      "Built a local academic assistant for USTH students by converting university PDFs into retrievable chunks for document-grounded question answering.",
+    link: "https://github.com/MilesDao/USTH_chatbot_Rag"
   },
   {
     name: "Amazon Electronics Customer Feedback",
     time: "Apr. 2025 – Jun. 2025",
     tags: ["NLP", "Random Forest", "XGBoost", "React"],
     description:
-      "Built ML and NLP pipelines for satisfaction prediction, sentiment analysis, clustering, and recommendation modeling."
+      "Built ML and NLP pipelines for satisfaction prediction, sentiment analysis, clustering, and recommendation modeling.",
+    link: "https://github.com/Vanduc006/team2-amazon-gdg"
   },
   {
     name: "HR Performance Analysis",
     time: "May 2025 – Jul. 2025",
     tags: ["Excel", "Power BI", "EDA"],
     description:
-      "Cleaned and analyzed employee records to support HR decision-making around satisfaction, performance, compensation, and retention."
+      "Cleaned and analyzed employee records to support HR decision-making around satisfaction, performance, compensation, and retention.",
+    link: "https://drive.google.com/drive/folders/1FB4j0xPv3dLrrlyBFdcHJwKvjP5oKG9b"
   }
 
   /*
@@ -94,7 +97,8 @@ const projects = [
     name: "Project Name",
     time: "Month Year – Month Year",
     tags: ["Python", "ML"],
-    description: "One short professional sentence about the project."
+    description: "One short professional sentence about the project.",
+    link: "https://github.com/.../..."
   }
   */
 ];
