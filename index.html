@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>hieuds.com — Nguyen Ngoc Hieu</title>
+  <meta name="description" content="Corporate minimal personal portfolio of Nguyen Ngoc Hieu." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap topbar">
+      <a href="#top" class="logo" data-profile="siteName">hieuds.com</a>
+      <nav class="menu" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#documents">Documents</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">NGUYEN NGOC HIEU</p>
+          <h1>Data Science undergraduate building practical AI and data systems.</h1>
+          <p class="hero-text">
+            Focused on machine learning, data analytics, retrieval-augmented generation, NLP, and software automation.
+            This portfolio is designed as a clean professional profile and can be expanded easily with more photos,
+            experience, projects, and supporting documents over time.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-dark" href="#projects">View projects</a>
+            <a class="btn" data-profile-link="cv" href="assets/cv_Hieu.pdf" target="_blank">Open CV</a>
+          </div>
+
+          <div class="contact-strip">
+            <span><strong>Email</strong><a data-profile-link="email" href="mailto:ngochieu1762005@gmail.com">ngochieu1762005@gmail.com</a></span>
+            <span><strong>GitHub</strong><a data-profile-link="github" href="https://github.com/ngochieu1762005" target="_blank">ngochieu1762005</a></span>
+            <span><strong>LinkedIn</strong><a data-profile-link="linkedin" href="https://linkedin.com/in/hieu2005" target="_blank">hieu2005</a></span>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/avatar.png" data-profile-img="avatar" alt="Portrait of Nguyen Ngoc Hieu" class="portrait">
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">01</span>
+          <div>
+            <h2>About</h2>
+            <p class="section-intro">A minimal corporate-style overview with clear structure and restrained visuals.</p>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Profile</h3>
+            <p>I am a Data Science undergraduate at USTH with a strong interest in building practical systems that combine data, machine learning, and usable software. My work often focuses on turning technical ideas into tools that are structured, reliable, and useful in real settings.</p>
+          </div>
+          <div class="panel">
+            <h3>Education</h3>
+            <p><strong>University of Science and Technology of Hanoi (USTH)</strong></p>
+            <p>Bachelor of Data Science · Jul. 2023 – Sep. 2027 (Expected)</p>
+            <p class="muted">Relevant coursework: Machine Learning, Data Mining, Algorithms, Probability & Statistics, Linear Algebra, and Database Systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">02</span>
+          <div>
+            <h2>Experience</h2>
+            <p class="section-intro">Professional roles and activities, with room to add more later.</p>
+          </div>
+        </div>
+        <div class="stack" id="experience-list"></div>
+        <div class="future-box">
+          <strong>Easy future updates</strong>
+          <p>You can add new internships, leadership roles, teaching activities, or research experience later by editing the <code>experience</code> list in <code>data.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">03</span>
+          <div>
+            <h2>Selected Projects</h2>
+            <p class="section-intro">A concise set of representative academic and practical projects.</p>
+          </div>
+        </div>
+        <div class="cards-3" id="project-list"></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">04</span>
+          <div>
+            <h2>Skills</h2>
+            <p class="section-intro">Core tools and technical areas used across projects and coursework.</p>
+          </div>
+        </div>
+        <div class="cards-3" id="skill-list"></div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">05</span>
+          <div>
+            <h2>Awards & Recognition</h2>
+            <p class="section-intro">Selected achievements from competitions and academic activities.</p>
+          </div>
+        </div>
+        <div class="award-list" id="award-list"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">06</span>
+          <div>
+            <h2>Memory Gallery</h2>
+            <p class="section-intro">A cleaner gallery slider that shows several memories at once, moves automatically, and opens a larger preview when you click a photo.</p>
+          </div>
+        </div>
+
+        <div class="memory-slider">
+          <div class="slider-topbar">
+            <span class="slider-note">Photos & memories</span>
+            <div class="slider-controls">
+              <button class="slider-btn" id="gallery-prev" type="button" aria-label="Previous images">←</button>
+              <button class="slider-btn" id="gallery-next" type="button" aria-label="Next images">→</button>
+            </div>
+          </div>
+
+          <div class="memory-viewport" id="gallery-viewport">
+            <div class="memory-track" id="gallery-list"></div>
+          </div>
+
+          <div class="slider-dots" id="gallery-dots"></div>
+        </div>
+
+        <div class="future-box">
+          <strong>Add more photos later</strong>
+          <p>Place new images inside <code>assets/gallery</code> and add one new object in the <code>gallery</code> list in <code>data.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="documents" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">07</span>
+          <div>
+            <h2>Documents</h2>
+            <p class="section-intro">For CVs, certificates, reports, papers, and other supporting files.</p>
+          </div>
+        </div>
+        <div class="doc-list" id="document-list"></div>
+        <div class="future-box">
+          <strong>Add more documents later</strong>
+          <p>Put any new file inside the <code>docs</code> folder, then register it in the <code>documents</code> list in <code>data.js</code>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cv" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">08</span>
+          <div>
+            <h2>CV Preview</h2>
+            <p class="section-intro">Embedded preview of the current CV, with a direct download option.</p>
+          </div>
+        </div>
+        <div class="cv-layout">
+          <div class="panel soft-panel">
+            <h3>Current CV</h3>
+            <p>The preview below is loaded from <code>assets/cv_Hieu.pdf</code>. You can replace it later while keeping the same layout.</p>
+            <div class="hero-actions">
+              <a class="btn btn-dark" data-profile-link="cv" href="assets/cv_Hieu.pdf" target="_blank">Open PDF</a>
+              <a class="btn" data-profile-link="cv" href="assets/cv_Hieu.pdf" download>Download CV</a>
+            </div>
+          </div>
+          <div class="cv-frame">
+            <object data="assets/cv_Hieu.pdf" type="application/pdf">
+              <p>Your browser cannot preview PDFs. Please open the file in a new tab.</p>
+            </object>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-label">09</span>
+          <div>
+            <h2>Contact</h2>
+            <p class="section-intro">For internships, collaboration, competitions, or academic opportunities.</p>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <h3>Email</h3>
+            <p><a data-profile-link="email" href="mailto:ngochieu1762005@gmail.com">ngochieu1762005@gmail.com</a></p>
+          </div>
+          <div class="panel">
+            <h3>Online Profiles</h3>
+            <p><a data-profile-link="github" href="https://github.com/ngochieu1762005" target="_blank">GitHub</a> · <a data-profile-link="linkedin" href="https://linkedin.com/in/hieu2005" target="_blank">LinkedIn</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous image">←</button>
+    <div class="lightbox-stage">
+      <img id="lightbox-image" src="" alt="Expanded gallery image">
+    </div>
+    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next image">→</button>
+  </div>
+
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <span>© <span id="year"></span> <span data-profile="siteName">hieuds.com</span></span>
+      <span>Minimal corporate portfolio.</span>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const $ = (s) => document.querySelector(s);
+    const node = (tag, cls, html) => {
+      const x = document.createElement(tag);
+      if (cls) x.className = cls;
+      if (html !== undefined) x.innerHTML = html;
+      return x;
+    };
+
+    document.querySelectorAll('[data-profile]').forEach(el => {
+      const key = el.getAttribute('data-profile');
+      if (profile[key]) el.textContent = profile[key];
+    });
+
+    const avatar = document.querySelector('[data-profile-img="avatar"]');
+    if (avatar) avatar.src = profile.avatar;
+
+    document.querySelectorAll('[data-profile-link="cv"]').forEach(a => a.href = profile.cv);
+    document.querySelectorAll('[data-profile-link="email"]').forEach(a => {
+      a.href = `mailto:${profile.email}`;
+      a.textContent = profile.email;
+    });
+    document.querySelectorAll('[data-profile-link="github"]').forEach(a => a.href = profile.github);
+    document.querySelectorAll('[data-profile-link="linkedin"]').forEach(a => a.href = profile.linkedin);
+    $('#year').textContent = new Date().getFullYear();
+
+    const expWrap = $('#experience-list');
+    experience.forEach(item => {
+      expWrap.appendChild(node('article', 'entry', `
+        <div class="entry-top">
+          <h3>${item.title}</h3>
+          <span>${item.time}</span>
+        </div>
+        <p class="entry-meta">${item.place} · ${item.location}</p>
+        <ul>${item.points.map(p => `<li>${p}</li>`).join('')}</ul>
+      `));
+    });
+
+    const projectWrap = $('#project-list');
+    projects.forEach(item => {
+      projectWrap.appendChild(node('article', 'panel card-panel', `
+        <h3>${item.name}</h3>
+        <p class="muted">${item.time}</p>
+        <p>${item.description}</p>
+        <div class="chip-row">${item.tags.map(t => `<span class="chip">${t}</span>`).join('')}</div>
+      `));
+    });
+
+    const skillWrap = $('#skill-list');
+    skills.forEach(item => {
+      skillWrap.appendChild(node('article', 'panel card-panel', `
+        <h3>${item.group}</h3>
+        <div class="chip-row">${item.items.map(t => `<span class="chip">${t}</span>`).join('')}</div>
+      `));
+    });
+
+    const awardWrap = $('#award-list');
+    awards.forEach(item => {
+      awardWrap.appendChild(node('div', 'award-item', item));
+    });
+
+    const galleryWrap = $('#gallery-list');
+    const dotsWrap = $('#gallery-dots');
+    const viewport = $('#gallery-viewport');
+    const prevBtn = $('#gallery-prev');
+    const nextBtn = $('#gallery-next');
+    const lightbox = $('#lightbox');
+    const lightboxImg = $('#lightbox-image');
+    const lightboxClose = $('#lightbox-close');
+    const lightboxPrev = $('#lightbox-prev');
+    const lightboxNext = $('#lightbox-next');
+
+    let currentIndex = 0;
+    let autoPlay = null;
+
+    function visibleCount() {
+      if (window.innerWidth >= 1180) return 4;
+      if (window.innerWidth >= 860) return 3;
+      if (window.innerWidth >= 580) return 2;
+      return 1;
+    }
+
+    function itemWidth() {
+      const gap = 14;
+      const count = visibleCount();
+      return (viewport.clientWidth - gap * (count - 1)) / count;
+    }
+
+    gallery.forEach((item, index) => {
+      const slide = node('article', 'memory-slide', `
+        <button class="memory-photo" type="button" aria-label="Open image ${index + 1}">
+          <img src="${item.src}" alt="Memory ${index + 1}" loading="lazy">
+        </button>
+      `);
+      slide.querySelector('button').addEventListener('click', () => openLightbox(index));
+      galleryWrap.appendChild(slide);
+
+      const dot = node('button', 'dot', '');
+      dot.type = 'button';
+      dot.setAttribute('aria-label', `Go to image set ${index + 1}`);
+      dot.addEventListener('click', () => goTo(index));
+      dotsWrap.appendChild(dot);
+    });
+
+    function applyItemWidths() {
+      const width = itemWidth();
+      [...galleryWrap.children].forEach(item => {
+        item.style.flex = `0 0 ${width}px`;
+      });
+      goTo(currentIndex, false);
+      updateDots();
+    }
+
+    function maxIndex() {
+      return Math.max(0, gallery.length - visibleCount());
+    }
+
+    function goTo(index, smooth = true) {
+      currentIndex = Math.max(0, Math.min(index, maxIndex()));
+      const width = itemWidth() + 14;
+      viewport.scrollTo({ left: currentIndex * width, behavior: smooth ? 'smooth' : 'auto' });
+      updateDots();
+    }
+
+    function nextSet() {
+      if (currentIndex >= maxIndex()) {
+        goTo(0);
+      } else {
+        goTo(currentIndex + 1);
+      }
+    }
+
+    function prevSet() {
+      if (currentIndex <= 0) {
+        goTo(maxIndex());
+      } else {
+        goTo(currentIndex - 1);
+      }
+    }
+
+    function pageCount() {
+      return maxIndex() + 1;
+    }
+
+    function updateDots() {
+      const dots = [...document.querySelectorAll('.dot')];
+      const active = Math.min(currentIndex, pageCount() - 1);
+      dots.forEach((dot, idx) => {
+        dot.classList.toggle('active', idx === active);
+        dot.style.display = idx < pageCount() ? 'inline-block' : 'none';
+      });
+    }
+
+    function startAutoPlay() {
+      stopAutoPlay();
+      autoPlay = setInterval(nextSet, 3500);
+    }
+
+    function stopAutoPlay() {
+      if (autoPlay) clearInterval(autoPlay);
+      autoPlay = null;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      prevSet();
+      startAutoPlay();
+    });
+
+    nextBtn.addEventListener('click', () => {
+      nextSet();
+      startAutoPlay();
+    });
+
+    viewport.addEventListener('mouseenter', stopAutoPlay);
+    viewport.addEventListener('mouseleave', startAutoPlay);
+
+    function openLightbox(index) {
+      lightbox.dataset.index = String(index);
+      lightboxImg.src = gallery[index].src;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('no-scroll');
+      stopAutoPlay();
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      lightboxImg.src = '';
+      document.body.classList.remove('no-scroll');
+      startAutoPlay();
+    }
+
+    function lightboxStep(step) {
+      let idx = Number(lightbox.dataset.index || 0);
+      idx = (idx + step + gallery.length) % gallery.length;
+      lightbox.dataset.index = String(idx);
+      lightboxImg.src = gallery[idx].src;
+    }
+
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightboxPrev.addEventListener('click', () => lightboxStep(-1));
+    lightboxNext.addEventListener('click', () => lightboxStep(1));
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') lightboxStep(-1);
+      if (e.key === 'ArrowRight') lightboxStep(1);
+    });
+
+    window.addEventListener('resize', applyItemWidths);
+    applyItemWidths();
+    startAutoPlay();
+
+    const docWrap = $('#document-list');
+    documents.forEach(item => {
+      docWrap.appendChild(node('article', 'doc-item', `
+        <div>
+          <h3>${item.title}</h3>
+          <p>${item.type} · ${item.note}</p>
+        </div>
+        <a class="btn" href="${item.file}" target="_blank">Open</a>
+      `));
+    });
+  </script>
+</body>
+</html>

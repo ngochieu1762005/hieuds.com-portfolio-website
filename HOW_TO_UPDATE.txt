@@ -1,0 +1,73 @@
+hieuds.com - HOW TO UPDATE
+==========================
+
+This version uses a clean corporate minimal layout.
+The gallery now works as a slider, shows 3-4 images at a time on larger screens, auto-slides, and lets users click an image to open a larger preview.
+Most normal updates only require editing data.js.
+
+1. Change basic information
+---------------------------
+Open data.js and edit the profile object:
+- name
+- role
+- location
+- email
+- GitHub / LinkedIn
+- summary
+
+2. Replace avatar
+-----------------
+Put your new image in assets/ and name it avatar.png.
+Recommended: portrait photo, at least 900px wide.
+
+3. Add new gallery photos
+-------------------------
+Step 1: Copy your image into assets/gallery/
+Example: assets/gallery/new-photo.jpg
+
+Step 2: Open data.js and find const gallery = [...]
+Add this block before the closing bracket:
+
+,{
+  src: "assets/gallery/new-photo.jpg",
+  title: "Photo title",
+  caption: "Short caption about this photo."
+}
+
+Note: the website slider only shows the image itself, not the title or caption.
+Those fields are just there in case you want to use them later.
+
+4. Add new experience
+---------------------
+Open data.js and find const experience = [...]
+Copy the sample block in the comment and add your new role.
+
+5. Add new project
+------------------
+Open data.js and find const projects = [...]
+Copy the sample block in the comment and add your new project.
+
+6. Add new documents
+--------------------
+Step 1: Copy the PDF/DOC file into docs/
+Example: docs/certificate.pdf
+
+Step 2: Open data.js and find const documents = [...]
+Add this block:
+
+,{
+  title: "Certificate Name",
+  type: "PDF",
+  file: "docs/certificate.pdf",
+  note: "Short note about this document."
+}
+
+7. Replace CV preview
+---------------------
+Replace assets/cv_Hieu.pdf with a new CV PDF using the same file name.
+Or change the profile.cv path inside data.js.
+
+8. Upload website
+-----------------
+Open index.html directly on your computer, or upload the whole folder to Netlify, Vercel, GitHub Pages, or any static hosting service.
+Then connect the custom domain hieuds.com if needed.
