@@ -15,38 +15,47 @@ const profile = {
   linkedin: "https://linkedin.com/in/hieu2005",
   github: "https://github.com/ngochieu1762005",
   summary:
-    "I focus on machine learning, data analytics, retrieval-augmented generation, and practical software automation.",
+    "Data Science undergraduate experienced in building end-to-end ML and analytics pipelines, from data cleaning and feature engineering to modeling and deployment. Delivered a production-style RAG system, customer-review sentiment/recommendation models, and an HR analytics report with Power BI dashboards.",
   avatar: "assets/avatar.png",
   cv: "assets/cv_Hieu.pdf"
 };
 
 const skills = [
   { group: "Programming", items: ["Python", "C/C++", "Java", "MATLAB"] },
-  { group: "Data Science", items: ["Pandas", "NumPy", "Scikit-learn", "EDA", "Machine Learning"] },
-  { group: "AI & NLP", items: ["Large Language Models", "RAG", "NLP", "Sentiment Analysis"] },
+  { group: "Data Science", items: ["Pandas", "NumPy", "Scikit-learn", "Machine Learning", "Statistical Analysis", "Feature Engineering"] },
+  { group: "AI & NLP", items: ["LLMs", "RAG", "NLP", "Sentiment Analysis", "LangChain", "ChromaDB"] },
+  { group: "Visualization", items: ["Power BI", "Excel", "Matplotlib"] },
   { group: "Tools", items: ["Git", "GitHub", "Jupyter Notebook", "Google Colab", "LaTeX"] },
-  { group: "Languages", items: ["Vietnamese", "English", "French A2"] }
+  { group: "Languages", items: ["Vietnamese (Native)", "English (Working Proficiency)", "French A2 (TCF)"] }
 ];
 
 const experience = [
-  {
-    title: "Software Engineer",
-    place: "MindX Tech & AI School",
-    time: "Apr. 2026 – Present",
-    location: "Hanoi, Vietnam",
-    points: [
-      "Developed automated software systems to support internal operations and improve workflow efficiency.",
-      "Built practical tools for education and management workflows, reducing repetitive manual tasks for non-technical users."
-    ]
-  },
   {
     title: "Class Monitor - Data Science Major",
     place: "USTH",
     time: "Sep. 2025 – Present",
     location: "Hanoi, Vietnam",
     points: [
-      "Represented Data Science students and supported communication between students and faculty.",
-      "Coordinated academic activities and contributed to student organization tasks."
+      "Represented Data Science students, coordinated academic activities, and supported communication between students and faculty."
+    ]
+  },
+  {
+    title: "Member of Math ICT Department",
+    place: "USTH Learning Support Club",
+    time: "Nov. 2023 – Dec. 2025",
+    location: "Hanoi, Vietnam",
+    points: [
+      "Developed a grading and online learning platform used by over 1,500 students.",
+      "Organized tutorials and supported first-year students in programming, mathematics, and technical subjects."
+    ]
+  },
+  {
+    title: "Member of R&D Department",
+    place: "USTH Coder Club",
+    time: "Dec. 2023 – Jan. 2026",
+    location: "Hanoi, Vietnam",
+    points: [
+      "Mentored students in Basic Programming and Data Structures & Algorithms classes, supporting technical training and problem-solving practice."
     ]
   }
 
@@ -89,6 +98,14 @@ const projects = [
     description:
       "Cleaned and analyzed employee records to support HR decision-making around satisfaction, performance, compensation, and retention.",
     link: "https://drive.google.com/drive/folders/1FB4j0xPv3dLrrlyBFdcHJwKvjP5oKG9b"
+  },
+  {
+    name: "Biodiversity",
+    time: "2026",
+    tags: ["Machine Learning", "Classification", "Python", "EDA"],
+    description:
+      "Built machine learning models to predict and classify species from biodiversity data, covering data cleaning, feature engineering, and model evaluation.",
+    link: "https://github.com/MilesDao/Biodiversity"
   }
 
   /*
@@ -104,12 +121,13 @@ const projects = [
 ];
 
 const awards = [
-  "Champion, USTH Code Championship – USTH Youth Union, 2025",
-  "Second Prize, Summer Data BootCamp 2025 – FTU Youth Union, 2025",
-  "Consolation Prize, Vietnamese National Student Informatics Olympiad, 2024",
-  "Top 5 Non-IT, ICPC Asia Regional Contest, 2023",
-  "Third Prize, Hanoi Mathematical Modeling Competition, 2023",
-  "Consolation Prize, RnD to Startup Competition – Vietnam National University, 2025"
+  "Third Prize, Data Science Talent Competition – Vietnam Quant Challenge 2026, Aug. 2026",
+  "Champion, USTH Code Championship – USTH Youth Union, Apr. 2025",
+  "Second Prize, Summer Data BootCamp 2025 – FTU Youth Union, May 2025",
+  "Consolation Prize, Vietnamese Student Informatics Olympiad – Specialized Informatics Division, Dec. 2024",
+  "Rector's Certificate for Students with Outstanding Achievement – USTH, Dec. 2024",
+  "Top 5 Non-IT, ICPC Asia Regional Contest – ICPC Global, Dec. 2023",
+  "Third Prize, Mathematical Modeling Competition, Aug. 2023"
 ];
 
 const gallery = [
