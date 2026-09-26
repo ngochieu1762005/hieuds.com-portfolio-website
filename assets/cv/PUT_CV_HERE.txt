@@ -1,0 +1,2 @@
+Put your CV as a PDF here, named CV.pdf
+(or rename it and update the link in index.html)

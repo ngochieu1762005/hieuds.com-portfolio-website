@@ -1,0 +1,2 @@
+Put your Gallery photos here, named 1.jpg through 6.jpg
+(or add/remove images and update index.html accordingly)

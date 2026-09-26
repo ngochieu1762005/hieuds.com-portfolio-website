@@ -1,0 +1,3 @@
+Put your portrait photo here as profile.jpg
+Put project screenshots here: project1.jpg, project2.jpg, project3.jpg
+(or rename them and update the src path in index.html)

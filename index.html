@@ -1,498 +1,379 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>hieuds.com</title>
-  <meta name="description" content="Personal portfolio of Nguyen Ngoc Hieu." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nguyễn Ngọc Hiếu | Data Science Portfolio</title>
+<meta name="description" content="Personal website of Nguyễn Ngọc Hiếu - Data Science and AI portfolio">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-  <header class="site-header">
-    <div class="wrap topbar">
-      <a href="#top" class="logo" data-profile="siteName">hieuds.com</a>
-      <nav class="menu" aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#experience">Leadership</a>
-        <a href="#projects">Projects</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#documents">Documents</a>
-        <a href="#cv">CV</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
 
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-grid">
-        <div class="hero-copy">
-          <p class="kicker">NGUYEN NGOC HIEU</p>
-          <h1>Data Science undergraduate building practical AI and data systems.</h1>
-          <p class="hero-text">
-            Focused on machine learning, data analytics, retrieval-augmented generation, NLP, and software automation.
-            This portfolio is designed as a clean professional profile and can be expanded easily with more photos,
-            experience, projects, and supporting documents over time.
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#" class="brand">Nguyễn Ngọc Hiếu</a>
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#awards">Awards</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero wrap" id="top">
+    <div class="hero-text">
+      <!-- <p class="eyebrow-plain">Hi, I'm</p> -->
+      <h1>Nguyễn Ngọc Hiếu</h1>
+      <p class="hero-role">Data Scientist and  Data Analysis Trainer </p>
+      <p class="hero-quote">"Turning data into clarity."</p>
+      <div class="hero-links">
+        <a class="social-link" href="mailto:ngochieu1762005@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.18-.75 6.82 5.18 6.82-5.18H5.18Zm14.07 1.56-6.46 4.9a1 1 0 0 1-1.38 0L4.75 7.57v9.68c0 .41.34.75.75.75h12.99c.41 0 .75-.34.75-.75V7.57Z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/nguyenngochieu2005" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.9V18H5.5V9.75Zm5.18 0h2.78v1.12h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.49 1.94 3.49 4.46V18h-2.9v-16c0-2.06-.04-4.7-2.87-4.7-2.87 0-3.31 2.24-3.31 4.56V18h-2.9V9.75Z"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/ngochieu1762005" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.21 23.47c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.06 1.82 2.78 1.29 3.46.99.11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.38 11.38 0 0 1 6.02 0c2.28-1.55 3.28-1.23 3.28-1.23.66 1.64.25 2.86.13 3.16.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.61-5.48 5.91.43.37.81 1.11.81 2.24v3.32c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="images/profile.jpg" alt="Portrait of Nguyễn Ngọc Hiếu">
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="wrap">
+      <h2>About</h2>
+      <p>
+        I have hands-on experience in Data Science, including data analysis, data processing,
+        visualization, and predictive modeling using Excel, Power BI, SQL, and Python.
+      </p>
+      <p>
+        I also have experience teaching data analysis to businesses and helping people apply
+        data-driven thinking in real-world situations.
+      </p>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section alt" id="education">
+    <div class="wrap">
+      <h2>Education</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Jul. 2023 — Sep. 2027 (Expected)</span>
+          <h3>Bachelor of Data Science</h3>
+          <p class="timeline-org">University of Science and Technology of Hanoi (USTH)</p>
+          <p>
+            Relevant coursework: Machine Learning, Data Mining, Algorithms, Probability &amp; Statistics,
+            Linear Algebra, and Database Systems.
           </p>
-
-          <div class="hero-actions">
-            <a class="btn btn-dark" href="#projects">View projects</a>
-            <a class="btn" data-profile-link="cv" href="assets/cv_Hieu.pdf" target="_blank">Open CV</a>
-          </div>
-
-          <div class="contact-strip">
-            <span><strong>Email</strong><a data-profile-link="email"
-                href="mailto:ngochieu1762005@gmail.com">ngochieu1762005@gmail.com</a></span>
-            <span><strong>GitHub</strong><a data-profile-link="github" href="https://github.com/ngochieu1762005"
-                target="_blank">ngochieu1762005</a></span>
-            <span><strong>LinkedIn</strong><a data-profile-link="linkedin" href="https://linkedin.com/in/hieu2005"
-                target="_blank">hieu2005</a></span>
-          </div>
-        </div>
-
-        <div class="hero-photo">
-          <img src="assets/avatar.png" data-profile-img="avatar" alt="Portrait of Nguyen Ngoc Hieu" class="portrait">
-        </div>
-      </div>
-    </section>
-
-    <section id="about" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">01</span>
-          <div>
-            <h2>About</h2>
-            <!-- <p class="section-intro">A minimal corporate-style overview with clear structure and restrained visuals.</p> -->
-          </div>
-        </div>
-        <div class="two-col">
-          <div class="panel">
-            <h3>Profile</h3>
-            <p>I am a Data Science undergraduate at USTH with a strong interest in building practical systems that
-              combine data, machine learning, and usable software. My work often focuses on turning technical ideas into
-              tools that are structured, reliable, and useful in real settings.</p>
-          </div>
-          <div class="panel">
-            <h3>Education</h3>
-            <p><strong>University of Science and Technology of Hanoi (USTH)</strong></p>
-            <p>Bachelor of Data Science · Jul. 2023 – Sep. 2027 (Expected)</p>
-            <p class="muted">Relevant coursework: Machine Learning, Data Mining, Algorithms, Probability & Statistics,
-              Linear Algebra, and Database Systems.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="experience" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">02</span>
-          <div>
-            <h2>Leadership &amp; Activities</h2>
-            <!-- <p class="section-intro">Professional roles and activities, with room to add more later.</p> -->
-          </div>
-        </div>
-        <div class="stack" id="experience-list"></div>
-        <!-- <div class="future-box">
-          <strong>Easy future updates</strong>
-          <p>You can add new internships, leadership roles, teaching activities, or research experience later by editing the <code>experience</code> list in <code>data.js</code>.</p>
-        </div> -->
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">03</span>
-          <div>
-            <h2>Selected Projects</h2>
-            <!-- <p class="section-intro">A concise set of representative academic and practical projects.</p> -->
-          </div>
-        </div>
-        <div class="cards-3" id="project-list"></div>
-      </div>
-    </section>
-
-    <section id="skills" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">04</span>
-          <div>
-            <h2>Skills</h2>
-            <!-- <p class="section-intro">Core tools and technical areas used across projects and coursework.</p> -->
-          </div>
-        </div>
-        <div class="cards-3" id="skill-list"></div>
-      </div>
-    </section>
-
-    <section id="awards" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">05</span>
-          <div>
-            <h2>Awards & Recognition</h2>
-            <!-- <p class="section-intro">Selected achievements from competitions and academic activities.</p> -->
-          </div>
-        </div>
-        <div class="award-list" id="award-list"></div>
-      </div>
-    </section>
-
-    <section id="gallery" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">06</span>
-          <div>
-            <h2>Memory Gallery</h2>
-            <!-- <p class="section-intro">A cleaner gallery slider that shows several memories at once, moves automatically, -->
-            and opens a larger preview when you click a photo.</p>
-          </div>
-        </div>
-
-        <div class="memory-slider">
-          <div class="slider-topbar">
-            <span class="slider-note">Photos & memories</span>
-            <div class="slider-controls">
-              <button class="slider-btn" id="gallery-prev" type="button" aria-label="Previous images">←</button>
-              <button class="slider-btn" id="gallery-next" type="button" aria-label="Next images">→</button>
-            </div>
-          </div>
-
-          <div class="memory-viewport" id="gallery-viewport">
-            <div class="memory-track" id="gallery-list"></div>
-          </div>
-
-          <div class="slider-dots" id="gallery-dots"></div>
-        </div>
-
-        <!-- <div class="future-box"> -->
-        <!-- <strong>Add more photos later</strong>
-          <p>Place new images inside <code>assets/gallery</code> and add one new object in the <code>gallery</code> list in <code>data.js</code>.</p> -->
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section id="documents" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">07</span>
-          <div>
-            <h2>Documents</h2>
-            <!-- <p class="section-intro">For CVs, certificates, reports, papers, and other supporting files.</p> -->
-          </div>
-        </div>
-        <div class="doc-list" id="document-list"></div>
-        <!-- <div class="future-box"> -->
-        <!-- <strong>Add more documents later</strong>
-          <p>Put any new file inside the <code>docs</code> folder, then register it in the <code>documents</code> list in <code>data.js</code>.</p> -->
-        <!-- </div> -->
-      </div>
-    </section>
-
-    <section id="cv" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">08</span>
-          <div>
-            <h2>CV Preview</h2>
-            <p class="section-intro">Embedded preview of the current CV, with a direct download option.</p>
-          </div>
-        </div>
-        <div class="cv-layout">
-          <div class="panel soft-panel">
-            <h3>Current CV</h3>
-            <!-- <p>The preview below is loaded from <code>assets/cv_Hieu.pdf</code>. You can replace it later while keeping the same layout.</p> -->
-            <div class="hero-actions">
-              <a class="btn btn-dark" data-profile-link="cv" href="assets/cv_Hieu.pdf" target="_blank">Open PDF</a>
-              <a class="btn" data-profile-link="cv" href="assets/cv_Hieu.pdf" download>Download CV</a>
-            </div>
-          </div>
-          <div class="cv-frame">
-            <object data="assets/cv_Hieu.pdf" type="application/pdf">
-              <p>Your browser cannot preview PDFs. Please open the file in a new tab.</p>
-            </object>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="section-label">09</span>
-          <div>
-            <h2>Contact</h2>
-            <!-- <p class="section-intro">For internships, collaboration, competitions, or academic opportunities.</p> -->
-          </div>
-        </div>
-        <div class="two-col">
-          <div class="panel">
-            <h3>Email</h3>
-            <p><a data-profile-link="email" href="mailto:ngochieu1762005@gmail.com">ngochieu1762005@gmail.com</a></p>
-          </div>
-          <div class="panel">
-            <h3>Online Profiles</h3>
-            <p><a data-profile-link="github" href="https://github.com/ngochieu1762005" target="_blank">GitHub</a> · <a
-                data-profile-link="linkedin" href="https://linkedin.com/in/hieu2005" target="_blank">LinkedIn</a></p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close image">×</button>
-    <button class="lightbox-nav lightbox-prev" id="lightbox-prev" type="button" aria-label="Previous image">←</button>
-    <div class="lightbox-stage">
-      <img id="lightbox-image" src="" alt="Expanded gallery image">
+        </li>
+      </ol>
     </div>
-    <button class="lightbox-nav lightbox-next" id="lightbox-next" type="button" aria-label="Next image">→</button>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Aug. 2026 — Present</span>
+          <h3>Research Assistant</h3>
+          <p class="timeline-org">ICT Lab USTH</p>
+          <ul>
+            <li>Worked on research related to intelligent agents and AI-driven systems.</li>
+            <li>Supported data collection, processing, analysis, and prototype development for research projects.</li>
+          </ul>
+        </li>
+        <!-- <li class="timeline-item">
+          <span class="timeline-date">2024 — Present</span>
+          <h3>Data Analysis Trainer</h3>
+          <p class="timeline-org">KPIM Academy</p>
+          <ul>
+            <li>Delivered practical data analysis and reporting training for corporate clients.</li>
+            <li>Trained learners in business data applications using Excel, Power BI, and SQL.</li>
+            <li>Supported programs on Data Analysis &amp; Reporting, AI &amp; Automation in HR, and executive data applications.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Jun. 2023 — Present</span>
+          <h3>Data Analyst</h3>
+          <p class="timeline-org">KPIM Joint Stock Company</p>
+          <ul>
+            <li>Analyzed cross-domain data across HR, business, and operations for enterprise projects.</li>
+            <li>Built Power BI dashboards and reports to support decision-making and operational improvement.</li>
+            <li>Designed SQL queries for data extraction, cleaning, and integration from multiple sources.</li>
+            <li>Delivered practical data analysis training and coaching to internal staff and enterprise clients.</li>
+          </ul>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Apr. 2026 — Jul. 2026</span>
+          <h3>Software Engineer Intern</h3>
+          <p class="timeline-org">MindX Technology School · Hanoi, Vietnam</p>
+          <ul>
+            <li>Developed automated software systems to support internal operations and improve workflow efficiency.</li>
+            <li>Built practical tools for education and management workflows, reducing repetitive manual tasks for non-technical users.</li>
+          </ul>
+        </li> -->
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section alt" id="projects">
+    <div class="wrap">
+      <h2>Featured Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project">
+          <img src="images/project1.jpg" alt="USTH Chatbot project preview">
+          <div class="project-body">
+            <h3>USTH Chatbot</h3>
+            <p>
+              Built a local RAG academic assistant for USTH students using university PDFs, multilingual embeddings,
+              and vector retrieval to enable document-grounded question answering.
+            </p>
+            <p class="tags">RAG · LangChain · ChromaDB · Python</p>
+            <a href="https://github.com/MilesDao/USTH_chatbot_Rag" target="_blank" rel="noopener">View source →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project2.jpg" alt="Amazon electronics customer feedback analytics project preview">
+          <div class="project-body">
+            <h3>Amazon Electronics Review Analytics</h3>
+            <p>
+              Built ML and NLP pipelines for sentiment analysis and recommendation using customer review data,
+              with interactive analytics and dashboard-based summarization.
+            </p>
+            <p class="tags">Python · NLP · XGBoost · React</p>
+            <a href="https://github.com/Vanduc006/team2-amazon-gdg" target="_blank" rel="noopener">View source →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project3.jpg" alt="HR performance analysis project preview">
+          <div class="project-body">
+            <h3>HR Performance Analysis</h3>
+            <p>
+              Cleaned and analyzed employee performance data across departments and branches to uncover retention,
+              compensation, and satisfaction trends for HR decision support.
+            </p>
+            <p class="tags">Excel · Power BI · SQL · Analytics</p>
+            <a href="https://drive.google.com/drive/folders/1FB4j0xPv3dLrrlyBFdcHJwKvjP5oKG9b" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project4.jpg" alt="EcoSense AI biodiversity monitoring project preview">
+          <div class="project-body">
+            <h3>EcoSense AI</h3>
+            <p>
+              Developed an intelligent biodiversity monitoring system for environmental threat detection using
+              acoustic data, Edge AI models, and a real-time dashboard.
+            </p>
+            <p class="tags">AI · FastAPI · Edge AI · Acoustic Analysis</p>
+            <a href="https://github.com/MilesDao/Biodiversity" target="_blank" rel="noopener">View source →</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <img src="images/project5.jpg" alt="R2AI LegalQA project preview">
+          <div class="project-body">
+            <h3>R2AI LegalQA</h3>
+            <p>
+              Built a Vietnamese legal question-answering system using retrieval-augmented generation over a legal corpus,
+              dense retrieval, reranking, and answer synthesis to support legal document lookup and evidence-based responses.
+            </p>
+            <p class="tags">Jul. 2026 — Aug. 2026 · RAG · Legal QA · BGE · Python</p>
+            <a href="https://drive.google.com/drive/folders/1YJnRfQ0YsK3nTUe6CN155x-_r0gbM7n4" target="_blank" rel="noopener">View project →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="section" id="awards">
+    <div class="wrap">
+      <h2>Awards &amp; Recognition</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Aug. 2026</span>
+          <h3>Third Prize, Data Science Talent Competition</h3>
+          <p class="timeline-org">Vietnam Quant Challenge 2026</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2025</span>
+          <h3>Consolation Prize, R&amp;D to Startup Competition</h3>
+          <p class="timeline-org">Vietnam National University</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2025</span>
+          <h3>Third Prize, Vietnam Social Innovation Challenge (Northern Region) - Coach</h3>
+          <p class="timeline-org">Foreign Trade University</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2025</span>
+          <h3>Top 6, Vietnam Social Innovation Challenge (National Final) - Coach</h3>
+          <p class="timeline-org">Foreign Trade University</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Nov. 2025</span>
+          <h3>Top 10, Social Innovation Launch</h3>
+          <p class="timeline-org">Youth+</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Jun. 2025</span>
+          <h3>Certificate of Achievement for Positive Contributions</h3>
+          <p class="timeline-org">VAST Youth Union</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">May 2025</span>
+          <h3>Second Prize, Summer Data BootCamp 2025</h3>
+          <p class="timeline-org">FTU Youth Union</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Apr. 2025</span>
+          <h3>Champion, USTH Code Championship</h3>
+          <p class="timeline-org">USTH Youth Union</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Apr. 2025</span>
+          <h3>Top 10, Message 4 Digen 2025</h3>
+          <p class="timeline-org">VNU Youth Union</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2024</span>
+          <h3>Consolation Prize, Vietnamese National Student Informatics Olympiad</h3>
+          <p class="timeline-org">Specialized Informatics Division</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2024</span>
+          <h3>Honorable mention, ICPC Asia Hanoi Regional Contest</h3>
+          <p class="timeline-org">ICPC Global</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date">Aug. 2023</span>
+          <h3>Third Prize, Mathematical Modeling Competition</h3>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section alt" id="activities">
+    <div class="wrap">
+      <h2>Leadership &amp; Activities</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date">Sep. 2025 — Present</span>
+          <h3>Class Monitor</h3>
+          <p class="timeline-org">Data Science Major, USTH</p>
+          <ul>
+            <li>Represented Data Science students, coordinated academic activities, and supported communication between students and faculty.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item">
+          <span class="timeline-date">Nov. 2023 — Dec. 2025</span>
+          <h3>Member of Math ICT Department</h3>
+          <p class="timeline-org">USTH Learning Support Club</p>
+          <ul>
+            <li>Developed a grading and online learning platform used by over 1500 students.</li>
+            <li>Organized tutorials and supported first-year students in programming, mathematics, and technical subjects.</li>
+          </ul>
+        </li>
+
+        <li class="timeline-item">
+          <span class="timeline-date">Dec. 2023 — Jan. 2026</span>
+          <h3>Member of R&amp;D Department</h3>
+          <p class="timeline-org">USTH Coder Club</p>
+          <ul>
+            <li>Mentored students in Basic Programming and Data Structures &amp; Algorithms classes, supporting technical training and problem-solving practice.</li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section alt" id="gallery">
+    <div class="wrap">
+      <h2>Gallery</h2>
+      <p class="section-intro">A few moments from my university journey, research work, and community experiences.</p>
+      <div class="gallery-grid">
+        <figure><img src="images/gallery/usth-award-team.jpg" alt="USTH award team" loading="lazy"></figure>
+        <figure><img src="images/gallery/champion-team.jpg" alt="Champion team" loading="lazy"></figure>
+        <figure><img src="images/gallery/competition-final.jpg" alt="Competition final" loading="lazy"></figure>
+        <figure><img src="images/gallery/innovation-award.jpg" alt="Innovation award" loading="lazy"></figure>
+        <figure><img src="images/gallery/summer-data-bootcamp.jpg" alt="Summer Data Bootcamp" loading="lazy"></figure>
+        <figure><img src="images/gallery/certificate-team.jpg" alt="Certificate team" loading="lazy"></figure>
+      </div>
+    </div>
+  </section>
+
+  <div class="lightbox" id="galleryLightbox" aria-hidden="true">
+    <button class="lightbox-arrow lightbox-arrow-left" aria-label="Previous image">‹</button>
+    <button class="lightbox-close" aria-label="Close image preview">×</button>
+    <img src="" alt="Expanded gallery image">
+    <button class="lightbox-arrow lightbox-arrow-right" aria-label="Next image">›</button>
   </div>
 
-  <footer class="site-footer">
-    <div class="wrap footer-row">
-      <span>© <span id="year"></span> <span data-profile="siteName">hieuds.com</span></span>
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="wrap contact-wrap">
+      <h2>Contact</h2>
+      <p>Reach out through any of the channels below, or download my CV for more details.</p>
+      <div class="hero-links contact-links">
+        <a class="social-link" href="mailto:ngochieu1762005@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6.75A2.75 2.75 0 0 1 5.75 4h12.5A2.75 2.75 0 0 1 21 6.75v10.5A2.75 2.75 0 0 1 18.25 20H5.75A2.75 2.75 0 0 1 3 17.25V6.75Zm2.18-.75 6.82 5.18 6.82-5.18H5.18Zm14.07 1.56-6.46 4.9a1 1 0 0 1-1.38 0L4.75 7.57v9.68c0 .41.34.75.75.75h12.99c.41 0 .75-.34.75-.75V7.57Z"/></svg>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/nguyenngochieu2005" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.94 8.5A1.56 1.56 0 1 1 6.94 5.4a1.56 1.56 0 0 1 0 3.1ZM5.5 9.75h2.9V18H5.5V9.75Zm5.18 0h2.78v1.12h.04c.39-.73 1.34-1.5 2.76-1.5 2.95 0 3.49 1.94 3.49 4.46V18h-2.9v-16c0-2.06-.04-4.7-2.87-4.7-2.87 0-3.31 2.24-3.31 4.56V18h-2.9V9.75Z"/></svg>
+        </a>
+        <a class="social-link" href="https://github.com/ngochieu1762005" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5A12 12 0 0 0 8.21 23.47c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.39-1.33-1.76-1.33-1.76-1.08-.74.08-.72.08-.72 1.2.08 1.84 1.24 1.84 1.24 1.06 1.82 2.78 1.29 3.46.99.11-.78.42-1.3.76-1.6-2.66-.3-5.46-1.33-5.46-5.92 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.16 0 0 1-.32 3.3 1.23a11.38 11.38 0 0 1 6.02 0c2.28-1.55 3.28-1.23 3.28-1.23.66 1.64.25 2.86.13 3.16.77.84 1.23 1.91 1.23 3.22 0 4.6-2.8 5.61-5.48 5.91.43.37.81 1.11.81 2.24v3.32c0 .32.21.69.83.57A12 12 0 0 0 12 .5Z"/></svg>
+        </a>
+        <a class="social-link cv-link" href="assets/cv/CV.pdf" target="_blank" rel="noopener" aria-label="Download CV" title="Download CV">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a1 1 0 0 1 1 1v7.59l2.3-2.3a1 1 0 1 1 1.4 1.42L12.7 15.7a1 1 0 0 1-1.4 0L7.3 11.21a1 1 0 0 1 1.4-1.42l2.3 2.3V4.5a1 1 0 0 1 1-1Zm-7 12a1 1 0 0 1 1 1v1.25h12v-1.25a1 1 0 1 1 2 0v2.25a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-2.25a1 1 0 0 1 1-1Z"/></svg>
+        </a>
+      </div>
+
+      <div class="contact-list">
+        <a href="mailto:ngochieu1762005@gmail.com">ngochieu1762005@gmail.com</a>
+        <a href="https://www.linkedin.com/in/nguyenngochieu2005" target="_blank" rel="noopener">linkedin.com/in/nguyenngochieu2005</a>
+        <a href="https://github.com/ngochieu1762005" target="_blank" rel="noopener">github.com/ngochieu1762005</a>
+      </div>
     </div>
-  </footer>
+  </section>
 
-  <script src="data.js"></script>
-  <script>
-    const $ = (s) => document.querySelector(s);
-    const node = (tag, cls, html) => {
-      const x = document.createElement(tag);
-      if (cls) x.className = cls;
-      if (html !== undefined) x.innerHTML = html;
-      return x;
-    };
+</main>
 
-    document.querySelectorAll('[data-profile]').forEach(el => {
-      const key = el.getAttribute('data-profile');
-      if (profile[key]) el.textContent = profile[key];
-    });
+<footer class="site-footer">
+  <div class="wrap">
+    <p>© 2026 Nguyễn Ngọc Hiếu. All rights reserved.</p>
+  </div>
+</footer>
 
-    const avatar = document.querySelector('[data-profile-img="avatar"]');
-    if (avatar) avatar.src = profile.avatar;
-
-    document.querySelectorAll('[data-profile-link="cv"]').forEach(a => a.href = profile.cv);
-    document.querySelectorAll('[data-profile-link="email"]').forEach(a => {
-      a.href = `mailto:${profile.email}`;
-      a.textContent = profile.email;
-    });
-    document.querySelectorAll('[data-profile-link="github"]').forEach(a => a.href = profile.github);
-    document.querySelectorAll('[data-profile-link="linkedin"]').forEach(a => a.href = profile.linkedin);
-    $('#year').textContent = new Date().getFullYear();
-
-    const expWrap = $('#experience-list');
-    experience.forEach(item => {
-      expWrap.appendChild(node('article', 'entry', `
-        <div class="entry-top">
-          <h3>${item.title}</h3>
-          <span>${item.time}</span>
-        </div>
-        <p class="entry-meta">${item.place} · ${item.location}</p>
-        <ul>${item.points.map(p => `<li>${p}</li>`).join('')}</ul>
-      `));
-    });
-
-    const projectWrap = $('#project-list');
-    projects.forEach(item => {
-      const titleHtml = item.link
-        ? `<a href="${item.link}" target="_blank" class="project-title-link">${item.name} <span class="link-arrow">↗</span></a>`
-        : item.name;
-      projectWrap.appendChild(node('article', 'panel card-panel', `
-        <h3>${titleHtml}</h3>
-        <p class="muted">${item.time}</p>
-        <p>${item.description}</p>
-        <div class="chip-row">${item.tags.map(t => `<span class="chip">${t}</span>`).join('')}</div>
-      `));
-    });
-
-    const skillWrap = $('#skill-list');
-    skills.forEach(item => {
-      skillWrap.appendChild(node('article', 'panel card-panel', `
-        <h3>${item.group}</h3>
-        <div class="chip-row">${item.items.map(t => `<span class="chip">${t}</span>`).join('')}</div>
-      `));
-    });
-
-    const awardWrap = $('#award-list');
-    awards.forEach(item => {
-      awardWrap.appendChild(node('div', 'award-item', item));
-    });
-
-    const galleryWrap = $('#gallery-list');
-    const dotsWrap = $('#gallery-dots');
-    const viewport = $('#gallery-viewport');
-    const prevBtn = $('#gallery-prev');
-    const nextBtn = $('#gallery-next');
-    const lightbox = $('#lightbox');
-    const lightboxImg = $('#lightbox-image');
-    const lightboxClose = $('#lightbox-close');
-    const lightboxPrev = $('#lightbox-prev');
-    const lightboxNext = $('#lightbox-next');
-
-    let currentIndex = 0;
-    let autoPlay = null;
-
-    function visibleCount() {
-      if (window.innerWidth >= 1180) return 4;
-      if (window.innerWidth >= 860) return 3;
-      if (window.innerWidth >= 580) return 2;
-      return 1;
-    }
-
-    function itemWidth() {
-      const gap = 14;
-      const count = visibleCount();
-      return (viewport.clientWidth - gap * (count - 1)) / count;
-    }
-
-    gallery.forEach((item, index) => {
-      const slide = node('article', 'memory-slide', `
-        <button class="memory-photo" type="button" aria-label="Open image ${index + 1}">
-          <img src="${item.src}" alt="Memory ${index + 1}" loading="lazy">
-        </button>
-      `);
-      slide.querySelector('button').addEventListener('click', () => openLightbox(index));
-      galleryWrap.appendChild(slide);
-
-      const dot = node('button', 'dot', '');
-      dot.type = 'button';
-      dot.setAttribute('aria-label', `Go to image set ${index + 1}`);
-      dot.addEventListener('click', () => goTo(index));
-      dotsWrap.appendChild(dot);
-    });
-
-    function applyItemWidths() {
-      const width = itemWidth();
-      [...galleryWrap.children].forEach(item => {
-        item.style.flex = `0 0 ${width}px`;
-      });
-      goTo(currentIndex, false);
-      updateDots();
-    }
-
-    function maxIndex() {
-      return Math.max(0, gallery.length - visibleCount());
-    }
-
-    function goTo(index, smooth = true) {
-      currentIndex = Math.max(0, Math.min(index, maxIndex()));
-      const width = itemWidth() + 14;
-      viewport.scrollTo({ left: currentIndex * width, behavior: smooth ? 'smooth' : 'auto' });
-      updateDots();
-    }
-
-    function nextSet() {
-      if (currentIndex >= maxIndex()) {
-        goTo(0);
-      } else {
-        goTo(currentIndex + 1);
-      }
-    }
-
-    function prevSet() {
-      if (currentIndex <= 0) {
-        goTo(maxIndex());
-      } else {
-        goTo(currentIndex - 1);
-      }
-    }
-
-    function pageCount() {
-      return maxIndex() + 1;
-    }
-
-    function updateDots() {
-      const dots = [...document.querySelectorAll('.dot')];
-      const active = Math.min(currentIndex, pageCount() - 1);
-      dots.forEach((dot, idx) => {
-        dot.classList.toggle('active', idx === active);
-        dot.style.display = idx < pageCount() ? 'inline-block' : 'none';
-      });
-    }
-
-    function startAutoPlay() {
-      stopAutoPlay();
-      autoPlay = setInterval(nextSet, 3500);
-    }
-
-    function stopAutoPlay() {
-      if (autoPlay) clearInterval(autoPlay);
-      autoPlay = null;
-    }
-
-    prevBtn.addEventListener('click', () => {
-      prevSet();
-      startAutoPlay();
-    });
-
-    nextBtn.addEventListener('click', () => {
-      nextSet();
-      startAutoPlay();
-    });
-
-    viewport.addEventListener('mouseenter', stopAutoPlay);
-    viewport.addEventListener('mouseleave', startAutoPlay);
-
-    function openLightbox(index) {
-      lightbox.dataset.index = String(index);
-      lightboxImg.src = gallery[index].src;
-      lightbox.classList.add('open');
-      lightbox.setAttribute('aria-hidden', 'false');
-      document.body.classList.add('no-scroll');
-      stopAutoPlay();
-    }
-
-    function closeLightbox() {
-      lightbox.classList.remove('open');
-      lightbox.setAttribute('aria-hidden', 'true');
-      lightboxImg.src = '';
-      document.body.classList.remove('no-scroll');
-      startAutoPlay();
-    }
-
-    function lightboxStep(step) {
-      let idx = Number(lightbox.dataset.index || 0);
-      idx = (idx + step + gallery.length) % gallery.length;
-      lightbox.dataset.index = String(idx);
-      lightboxImg.src = gallery[idx].src;
-    }
-
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightboxPrev.addEventListener('click', () => lightboxStep(-1));
-    lightboxNext.addEventListener('click', () => lightboxStep(1));
-    lightbox.addEventListener('click', (e) => {
-      if (e.target === lightbox) closeLightbox();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (!lightbox.classList.contains('open')) return;
-      if (e.key === 'Escape') closeLightbox();
-      if (e.key === 'ArrowLeft') lightboxStep(-1);
-      if (e.key === 'ArrowRight') lightboxStep(1);
-    });
-
-    window.addEventListener('resize', applyItemWidths);
-    applyItemWidths();
-    startAutoPlay();
-
-    const docWrap = $('#document-list');
-    documents.forEach(item => {
-      docWrap.appendChild(node('article', 'doc-item', `
-        <div>
-          <h3>${item.title}</h3>
-          <p>${item.type} · ${item.note}</p>
-        </div>
-        <a class="btn" href="${item.file}" target="_blank">Open</a>
-      `));
-    });
-  </script>
+<script src="js/main.js"></script>
 </body>
-
 </html>
