@@ -1,6 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="BLIP CAPTIONING">
-<rect width="960" height="600" fill="#111c2e"/><circle cx="845" cy="80" r="220" fill="#b6a5ff" opacity=".08"/><circle cx="120" cy="515" r="185" fill="#b6a5ff" opacity=".07"/>
-<text x="65" y="85" fill="#b6a5ff" font-size="26" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="3">DATA SCIENCE / AI</text>
-<rect x="75" y="150" width="300" height="240" rx="20" fill="#2d405b"/><circle cx="160" cy="216" r="29" fill="#b6a5ff"/><path d="M100 343l90-95 57 60 48-54 55 89z" fill="#6b84bd"/><path d="M414 270h110" stroke="#b6a5ff" stroke-width="9" stroke-linecap="round"/><path d="M510 254l24 16-24 16" fill="none" stroke="#b6a5ff" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><rect x="570" y="165" width="310" height="208" rx="20" fill="#2d405b"/><g stroke="#b6a5ff" stroke-width="12" stroke-linecap="round"><path d="M612 217h214"/><path d="M612 263h175"/><path d="M612 309h125"/></g>
-<text x="65" y="490" fill="#f2f5fb" font-size="48" font-family="Arial,sans-serif" font-weight="bold">BLIP CAPTIONING</text>
-<text x="65" y="538" fill="#9eafc9" font-size="25" font-family="Arial,sans-serif">VISION + LANGUAGE</text></svg>
