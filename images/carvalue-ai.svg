@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="600" viewBox="0 0 960 600" role="img" aria-label="CARVALUE AI">
+<rect width="960" height="600" fill="#111c2e"/><circle cx="845" cy="80" r="220" fill="#f7bf78" opacity=".08"/><circle cx="120" cy="515" r="185" fill="#f7bf78" opacity=".07"/>
+<text x="65" y="85" fill="#f7bf78" font-size="26" font-family="Arial,sans-serif" font-weight="bold" letter-spacing="3">DATA SCIENCE / AI</text>
+<g stroke="#f7bf78" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"><path d="M112 315l36-94q11-22 40-22h268q26 0 40 22l36 94"/><path d="M113 314h425q24 0 24 24v27H90v-27q0-24 23-24z"/><circle cx="166" cy="367" r="28" fill="#111c2e"/><circle cx="486" cy="367" r="28" fill="#111c2e"/></g><rect x="640" y="152" width="236" height="224" rx="18" fill="#283c55"/><path d="M684 330v-54m45 54v-88m45 88V205m45 125v-108" stroke="#f7bf78" stroke-width="19" stroke-linecap="round"/>
+<text x="65" y="490" fill="#f2f5fb" font-size="48" font-family="Arial,sans-serif" font-weight="bold">CARVALUE AI</text>
+<text x="65" y="538" fill="#9eafc9" font-size="25" font-family="Arial,sans-serif">USED-CAR PRICE PREDICTION</text></svg>
